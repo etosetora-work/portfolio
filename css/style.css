@@ -67,6 +67,10 @@ body {
 
 /* デスクトップ向けスタイル */
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+    }
+    
  /* フェードイン　*/
   @keyframes fadeIn {
     0% { opacity: 0; }
@@ -117,10 +121,10 @@ body {
 .nav--fixed ul li {
   flex: 1;
   text-align: center; 
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #F5F4F5;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 10px 0;
   }
 
 .nav--fixed ul li a {
@@ -133,15 +137,19 @@ body {
   }
 
 /* セクション共通 --------------------------------------- */
+.section__head {
+  margin: 0 10px;
+  }
+
 .section__head h2::before {
   content: "◆";
   color: #F18701;
-  font-size: 2rem;
-  margin: 0 10px 5px;
+  font-size: 1.8rem;
+  margin-right: 10px;
   }
 
 .contents:not(:last-child)::after {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
   }
 
 .contents:last-child {
@@ -153,7 +161,7 @@ body {
   display: block;
   color: #9E9E9E;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 80px;
   }
 
 .section__head {
@@ -164,7 +172,7 @@ body {
   }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   }
 
 .bar {
@@ -216,6 +224,18 @@ a {
     max-width: 100%;
     justify-content: center;
     margin: auto;
+    }
+
+  .section__head {
+    margin: 0;
+    }
+
+  .contents:not(:last-child)::after {
+    margin-bottom: 150px;
+    }
+
+  .contents:not(:first-child):not(:last-child)::after {
+    margin-top: 150px;
     }
   }
 
@@ -649,6 +669,10 @@ h1 img {
     #contact .section__body {
     padding-left: 0;
     }
+  }
+
+.link--foam {
+  font-weight: 600;
   }
 
 .contact--link dl {
