@@ -540,7 +540,7 @@ h1 img {
   gap: 20px;
   max-width: 100%;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   place-content: center;
   place-items: center;
   }
@@ -574,7 +574,7 @@ h1 img {
 .thumbnail_img {
   width: 100%;
   max-width: 300px;
-  filter: drop-shadow(3px 6px 0 #545454);
+  filter: drop-shadow(3px 3px 0 #545454);
   }
 
 .container__link {
