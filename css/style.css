@@ -142,16 +142,20 @@ body {
   margin: 0 10px 3px 0;
   }
 
-section {
+.contents:not(:last-child)::after {
   margin-bottom: 150px;
   }
 
-section:not(:first-child):not(:last-child)::after {
+.contents:last-child {
+  margin-bottom: 50px;
+  }
+
+.contents:not(:first-child):not(:last-child)::after {
   content: "◆";
   display: block;
   color: #9E9E9E;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   }
 
 .section__head {
