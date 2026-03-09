@@ -54,7 +54,7 @@ button {
 /* 全体適用 ----------------------------------------------- */
 body {
   font-family: "Smooch Sans","Zen Kaku Gothic New", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #545454;
   background: #F5F4F5;
   }
@@ -64,22 +64,24 @@ body {
 .debug *::after {
   border: 1px solid #8377D1;
   }
-
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 1024px) {
  /* フェードイン　*/
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
 
-.fadein {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-  }
+  .fadein {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    }
   
-.fadein.is-animated {
-  opacity: 1;
-  transform: translateY(0);
+  .fadein.is-animated {
+    opacity: 1;
+    transform: translateY(0);
+    }
   }
 
 :focus-visible {
@@ -114,7 +116,7 @@ body {
 .nav--fixed ul li {
   flex: 1;
   text-align: center; 
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #F5F4F5;
   font-weight: 600;
   padding: 10px 20px;
@@ -138,7 +140,7 @@ body {
 .section__head h2::before {
   content: "◆";
   color: #F18701;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0 10px 3px 0;
   }
 
@@ -166,7 +168,7 @@ body {
   }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   }
 
 .bar {
@@ -190,13 +192,21 @@ dl {
 
 dt {
   font-weight: 800;
+  position: relative;
+  padding-left: 24px;
   }
 
 dt::before {
-  content: "\25B6";
-  color: #8377D1;
-  font-size: 1.2rem;
-  padding-right: 4px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 13px solid #8377D1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   }
 
 a {
@@ -233,24 +243,49 @@ a {
   }
 
 #hero h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 800;
   border-bottom: 3px solid #8377D1;
   display: inline-block;
-  line-height: 2.5rem;
-  margin-bottom: 20px;
+  line-height: 2rem;
+  margin-bottom: 10px;
   }
 
 .nav--hero ul li {
   font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   }
+
+ .nav--hero a {
+  position: relative;
+  padding-left: 24px;
+  }
+
+.nav--hero a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 13px solid #8377D1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  }
+
+.nav--hero a:hover::before {
+  opacity: 1;
+  } 
 
 /* デスクトップ向けスタイル */
 @media screen and (min-width: 1024px) {
   #hero h3 {
     font-size: 3rem;
+    line-height: 3rem;
     }
 
   .nav--hero ul li {
@@ -697,8 +732,8 @@ footer {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
@@ -709,6 +744,14 @@ footer {
   transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
+  }
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 1024px) {
+  .page-top {
+    width: 100px;
+    height: 100px;
+    }
   }
 
 .page-top.is-show {
