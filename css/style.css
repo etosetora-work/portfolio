@@ -70,7 +70,7 @@ body {
   body {
     font-size: 1.2rem;
     }
-    
+
  /* フェードイン　*/
   @keyframes fadeIn {
     0% { opacity: 0; }
@@ -102,7 +102,7 @@ body {
   width: 100%;
   overflow: hidden;
   z-index: 1000;
-  filter: drop-shadow(1px 1px 2px #545454);
+  filter: drop-shadow(0 0 2px #545454);
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -121,10 +121,17 @@ body {
 .nav--fixed ul li {
   flex: 1;
   text-align: center; 
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #F5F4F5;
   font-weight: 600;
   padding: 10px 0;
+  }
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 1024px) {
+  .nav--fixed ul li {
+    font-size: 1.8rem;
+    }
   }
 
 .nav--fixed ul li a {
@@ -573,6 +580,7 @@ h1 img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
   }
 
 .flex_item--link p {
