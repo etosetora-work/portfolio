@@ -540,6 +540,7 @@ h1 img {
   gap: 20px;
   max-width: 100%;
   padding: 20px;
+  margin-bottom: 30px;
   place-content: center;
   place-items: center;
   }
@@ -580,12 +581,11 @@ h1 img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
   }
 
 .flex_item--link p {
   font-size: 1.6rem;
-  margin: 20px 10px 0 0;
+  margin: 20px 10px 0 30px;
   }
 
 .flex_item--link a {
@@ -773,7 +773,7 @@ footer {
   height: 70px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
