@@ -261,6 +261,67 @@ a {
   margin-left: 10px;
   }
 
+.scroll,.scroll_down {
+  display: none;
+  }
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 1024px) {
+  .scroll {
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    }
+
+  .scroll_down {
+    display: block;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: FloatVertical 2s ease-in-out infinite;
+    }
+
+  .scroll_down p {
+    position: absolute;
+    right: 5px;
+    color: #9E9E9E;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2em;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+  .scroll_down:before {
+    content: "";
+    position: absolute;
+    right: -6px;
+    bottom: -100px;
+    width: 2px;
+    height: 20px;
+    background: #F18701;
+    transform: skewX(-31deg);
+    }
+
+  .scroll_down:after {
+    content:"";
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 100px;
+    background:#F18701;
+    }
+
+  @keyframes  FloatVertical {
+    0% { transform:translate3d(0,2.5vw,0); }
+    50% { transform:translate3d(0,0.5vw,0); }
+    100% { transform:translate3d(0,2.5vw,0); }
+    }
+  }
+
 #hero h3 {
   font-size: 2rem;
   font-weight: 800;
@@ -735,6 +796,10 @@ h1 img {
   border-bottom: solid 1px #8377D1;
   }
 
+.contact--link dd {
+  letter-spacing: 0.1rem;
+  }
+
 .link--flex img{
   height: auto;
   flex-shrink: 0;
@@ -754,6 +819,10 @@ h1 img {
 
 .sns-icon--xfolio img {
   width: 120px;
+  }
+
+.sns-link {
+  font-size: 1.4rem;
   }
 
 /* フッター ----------------------------------------------- */
