@@ -638,6 +638,7 @@ h1 img {
   max-width: 300px;
   padding: 10px;
   filter: drop-shadow(3px 3px 3px #545454);
+  transform: translateZ(0);
   }
 
 .container__link {
