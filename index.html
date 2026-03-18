@@ -1,325 +1,279 @@
 <!doctype html>
-<html lang="ja">
+<html>
 <head>
 <meta name="robots" content="none">
 <meta charset="utf-8">
-<title>portfolio</title>
+<title>COSMIC TALES - 星と宇宙を巡る物語</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Webデザイン・イラスト制作を行う、瀬虎えとのポートフォリオサイト">
-<meta property="og:title" content="瀬虎えと | Portfolio">
-<meta property="og:description" content="Webデザイン・イラスト制作を行う、瀬虎えとのポートフォリオサイト">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://etosetora-work.github.io/portfolio/">
-<meta property="og:image" content="images/sns-thumbnail.jpg">
+<meta name="description" content="天体擬人化イラストと、星や宇宙に関する情報を紹介するポートフォリオ用自主制作サイトです。
+イラストと解説を通して、宇宙の世界をお楽しみください。">
 <!-- ファイルリンク -->
-<link rel="stylesheet" media="all" href="css/style.css">
-<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" href="style.css">
 <!-- フォントリンク -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 <!-- ファビコン -->
 <link rel="icon" href="images/favicon.ico">  
 </head>
 
 <body>
+<div class="wrapper">
 
-<!-- ヘッダー*追従ナビ -->
-<header>
-    <nav class="nav nav--fixed">
-        <ul>
-            <li><a href="#web_design">WEBDESIGN</a></li>
-            <li><a href="#illustration">ILLUSTRATION</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
+<!-- ここからヘッダー -->
+<header id="header">
+    <!-- ケバブメニューボタン -->
+    <button class="menu-button" aria-label="メニューを開く">
+      <span class="dot planet1"></span>
+      <span class="dot planet2"></span>
+      <span class="dot planet3"></span>
+    </button>
+
+    <nav class="menu">
+      <ul class="nav">
+        <li><a href="#" class="nav-link">home</a></li>
+        <li><a href="contents.html" class="nav-link">contents</a></li>
+        <li><a href="illustration.html" class="nav-link">illustration</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+      </ul>
     </nav>
 </header>
-
-<main>
-
-<!-- セクション*ヒーロー -->
-<section id="hero">
-    <div class="container">
-        <div class="container__hero">
-            <div class="flex_item flex_item--hero">
-                <div class="nav--hero__left">
-                    <h3>SELECT</h3>
-                    <nav class="nav nav--hero">
-                        <ul>
-                            <li><a href="#web_design" class="">WEB DESIGN</a></li>
-                            <li><a href="#illustration" class="">ILLUSTRATION</a></li>
-                            <li><a href="#about" class="">ABOUT</a></li>
-                            <li><a href="#contact" class="">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                        <div class="scroll">
-                        <div class="scroll_down"><p>scroll</p></div>
-                        </div>
-                </div>
-            </div>
-
-            <div class="flex_item flex_item--hero">
-                <h1><img src="images/hero.png" alt="ポートフォリオ｜キービジュアル" width="1920" height="1200"></h1>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- セクション*ウェブデザイン -->
-<section id="web_design" class="fadein contents">
-<div class="wrapper">
-    <div class="section__head">
-        <h2>WEB DESIGN</h2>
-        <div class="bar"><span class="bar-fill"></span></div>
-    </div>
-    <div class="section__body">
-        <div class="container">
-            <div class="container__web_design">
-                
-                <div class="web_design__contents">
-
-                    <div class="web_design__nav">
-                        <button class="nav prev" aria-label="前の作品へ">◀</button>
-                        <div class="web_design__title">COSMIC TALES</div>
-                        <button class="nav next" aria-label="次の作品へ">▶</button>
-                    </div>
-
+<!-- ここまでヘッダー -->
  
+<!-- ここからコンテンツ -->
+<div class="stars">
+<div class="shooting-stars-container"></div>
 
-                    <div class="web_design__item  is-active" data-content="1" data-title="COSMIC TALES">
-                    <div class="web_design__body">
-                    <div class="fukidashi">
-                        <p class="click_here">Click!</p>
-                    </div>
-                    <div class="flex_item flex_item--web_design">
-                    <a href="cosmic/index.html" target="_blank"><img src="images/thumbnail-cosmic.png" alt="COSMIC TALES｜モバイルビュー"></a>
-                    </div>
+<!-- ここからメインビジュアル -->
+<section id="main-visual">
+  <div class="animation"></div>
+  <h1>Your Journey Through<br>the Stars Begins Here.</h1>
+  <p class="sub-text">星を巡る旅は、ここから始まります！</p>
+  <div class="mainvisual-img">
+  <img src="images/star1.png" alt="星のイラスト1" class="mainvisual-star1">
+  <img src="images/main-astronaut.png" alt="宇宙飛行士のイラスト" class="mainvisual-astronaut">
+  <img src="images/star2.png" alt="星のイラスト2" class="mainvisual-star2">
+  </div>
+  
+  <div class="scroll">
+    <div class="scroll_down"><p>scroll</p></div>
+  </div>
 
-                        <div class="flex_item flex_item--web_design explanation">
-                        <div class="site-title"><span class="site-subtitle">AREA 01 /</span>COSMIC</div>
-                        <dl>
-                        <dt><a href="cosmic/index.html" target="_blank">COSMIC TALES - 星と宇宙を巡る物語</a></dt>
-                            <dd>－宇宙をテーマとした用語解説</dd>
-                            <dd>－自作天体擬人化イラストの掲載</dd>
-                        <dt>制作期間</dt>
-                            <dd>制作期間：約2ヶ月（2025年2月～4月）</dd>
-                            <dd>アルバイトと並行して自主制作</dd>
-                        <dt>使用スキル</dt>
-                            <dd>－情報構造設計</dd>
-                            <dd>－オリジナルイラスト制作</dd>
-                            <dd>－レスポンシブ対応</dd>
-                            <dd>－CSS・JSアニメーション</dd>
-                        <dt>目的</dt>
-                            <dd>興味喚起 / 世界観への没入</dd>
-                        <dt>工夫点</dt>
-                            <dd>－イラストとUIの世界観統一</dd>
-                            <dd>－各コンテンツの充実化</dd>
-                        </dl>
-                        </div>
-                    </div>
-                    </div>
-                
-                    <div class="web_design__item" data-content="2" data-title="ふれあいサマーフェス">
-                    <div class="web_design__body">
-                    <div class="fukidashi">
-                        <p class="click_here">Click!</p>
-                    </div>
-                    <div class="flex_item flex_item--web_design">
-                    <a href="summerfes/index.html" target="_blank"><img src="images/thumbnail-summerfes.png" alt="ふれあいサマーフェス｜モバイルビュー"></a>
-                    </div>
+</section>
+<!-- ここまでメインビジュアル -->
 
-                    <div class="flex_item flex_item--web_design explanation">
-                    <div class="site-title"><span class="site-subtitle">AREA 02 /</span>SUMMER FES</div>
-                        <dl>
-                        <dt><a href="summerfes/index.html" target="_blank">ふれあいサマーフェス</a></dt>
-                            <dd>架空フェスイベントの特設サイト</dd>
-                        <dt>制作期間</dt>
-                            <dd>約25時間</dd>
-                            <dd>クライアント想定での自主制作</dd>
-                        <dt>使用スキル</dt>
-                            <dd>－情報構造設計</dd>
-                            <dd>－レスポンシブ対応</dd>
-                            <dd>－CSS・JSアニメーション</dd>
-                        <dt>目的</dt>
-                            <dd>地域参加促進 / 情報整理</dd>
-                        <dt>工夫点</dt>
-                            <dd>－地域活性化を意識した設計</dd>
-                            <dd>－マルチページ構成での情報整理</dd>
-                        </dl>
-                        </div>
-                    </div>
-                    </div>
-                
-                    <div class="web_design__item" data-content="3" data-title="ふれあい水族館">
-                    <div class="web_design__body">
-                    <div class="fukidashi">
-                        <p class="click_here">Click!</p>
-                    </div>
-                    <div class="flex_item flex_item--web_design">
-                    <a href="aquarium/index.html" target="_blank"><img src="images/thumbnail-aquarium.png" alt="ふれあい水族館｜モバイルビュー"></a>
-                    </div>
-
-                    <div class="flex_item flex_item--web_design explanation">
-                        <div class="site-title"><span class="site-subtitle">AREA 03 /</span>AQUARIUM</div>
-                        <dl>
-                        <dt><a href="aquarium/index.html" target="_blank">ふれあい水族館</a></dt>
-                            <dd>架空水族館のコーポレートサイト</dd>
-                        <dt>制作期間</dt>
-                            <dd>制作期間：約4ヶ月（2023年9月～2024年1月）</dd>
-                            <dd>職業訓練課題として隔週進行で制作</dd>
-                        <dt>使用スキル</dt>
-                            <dd>－情報構造設計</dd>
-                            <dd>－一部レスポンシブ対応</dd>
-                            <dd>－CSS・JSアニメーション</dd>
-                        <dt>目的</dt>
-                            <dd>来館促進 / ファミリー層への訴求</dd>
-                        <dt>工夫点</dt>
-                            <dd>親しみやすさを重視したデザイン設計</dd>
-                        <dt>改善点</dt>
-                            <dd>今後レスポンシブ対応予定</dd>
-                        </dl>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-            </div>
+<!-- ここから宇宙百科事典 -->
+<section id="encyclopedia" class="fadein">
+  <div class="border"><h2>Cosmic Encyclopedia</h2></div>
+  <div class="pickup-wrap">
+    <img src="images/astronaut-2.png" alt="宇宙飛行士のイラスト" class="astronaut-img">
+    <h3 class="pickup-balloon">Pick Up!</h3>
+  </div>
+  <p class="sub-text">宇宙に関連する用語や天体などを紹介しています</p>
+    <div class="encyclopedia-grid"> 
+      <div class="item"><img src="images/moon.jpg" alt="写真｜月"></div>
+      <div class="item">
+        <div class="explanation-box planet-box">
+          <dl>
+            <dt>月 / MOON</dt>
+            <dd>
+              <p>月は<strong>地球のたったひとつの衛星</strong>で、私たちのすぐそばにある天体です。
+                満ち欠けを繰り返し、潮の満ち引きを生み出すことで、地球をより住みやすい環境にしています。
+                地球の約4分の1の大きさでありながら、夜空で最も明るく輝く天体のひとつです。
+                人類はアポロ計画で月に降り立ち、今もさまざまな探査が続けられています。</p>
+            </dd>
+          </dl>
         </div>
+      </div>
+
+      <div class="item"><img src="images/voyager.jpg" alt="写真｜惑星探査機ボイジャー"></div>
+      <div class="item">
+        <div class="explanation-box rocket-box">
+          <dl>
+            <dt>惑星探査機ボイジャー / VOYAGER</dt>
+            <dd>
+              <p>ボイジャー1号と2号は、1977年に地球を飛び立った双子の宇宙探査機です。
+                人類が送り出した宇宙船のなかで、<strong>太陽系を飛び出した唯一の探査機</strong>でもあります。
+                今も地球に向けてデータを送り続けており、「ゴールデンレコード」という、
+                さまざまな国の言葉や音楽が収められたディスクを搭載しています。</p>
+            </dd>
+          </dl>
+        </div>
+      </div>
     </div>
-</div>
+
+    <div class="encyclopedia-btn">
+      <a href="contents.html">and more</a>
+    </div>
 </section>
 
-<!-- セクション*イラスト -->
-<section id="illustration" class="fadein contents">
-<div class="wrapper">
-    <div class="section__head">
-        <h2>ILLUSTRATION</h2>
-        <div class="bar"><span class="bar-fill"></span></div>
-    </div>
-    <div class="section__body">
-        <div class="container">
-            <div class="container__illustration">
-                <div class="grid_item grid_item--illustration">
-                    <a href="images/yomi.png" data-lightbox="gallery" data-title="架空バーチャルシンガー風OC｜YOMI.">
-                        <div class="thumbnail_img">
-                        <img src="images/thumbnail-yomi.png" alt="YOMI.｜イラストサムネイル">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid_item grid_item--illustration">
-                    <a href="images/navi.png" data-lightbox="gallery" data-title="ポートフォリオサイト用OC｜ナビゲーションAI navi">
-                        <div class="thumbnail_img">
-                        <img src="images/thumbnail-navi.png" alt="navi｜イラストサムネイル">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid_item grid_item--illustration">
-                    <a href="images/neptis.png" data-lightbox="gallery" data-title="海王星擬人化｜ネプティス">
-                        <div class="thumbnail_img">
-                        <img src="images/thumbnail-neptis.png" alt="ネプティス｜イラストサムネイル">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid_item grid_item--illustration">
-                    <a href="images/red.png" data-lightbox="gallery" data-title="チャイナ×ネクロマンサーOC">
-                        <div class="thumbnail_img">
-                        <img src="images/thumbnail-red.png" alt="OC｜イラストサムネイル">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- ここまで宇宙百科事典 -->
 
-    <div class="container">
-        <div class="container__link">
-            <div class="flex_item flex_item--link">
-            <p>View more...</p>
-            </div>
-            <div class="flex_item flex_item--link xfolio-btn">
-            <a href="https://xfolio.jp/portfolio/etosetora" target="_blank">Xfolio</a>
-            </div>
-        </div>
+
+<!-- ここからギャラリー -->
+<section id="gallery" class="fadein">
+  <div class="border"><h2>Artistic Cosmos</h2></div>
+
+  <section class="photo fadein">
+    <h3>photo</h3>
+    <div class="photo-gallery">
+      <div class="photo-list photo-slider">
+        <div class="photo-item"><img src="images/starsystem.png" alt="宇宙の画像"></div>
+        <div class="photo-item"><img src="images/planet.jpg" alt="惑星の画像"></div>
+        <div class="photo-item"><img src="images/orion.jpg" alt="オリオンの画像"></div>
+        <div class="photo-item"><img src="images/Artemis.png" alt="アルテミスの画像"></div>
+        <div class="photo-item"><img src="images/crater.jpg" alt="月面探査機とクレーターの画像"></div>
+        <div class="photo-item"><img src="images/blackhole.jpg" alt="ブラックホールの画像"></div>
+      </div>
     </div>
-</div>
+  </section>
+
+  <section id="illustration" class="fadein">
+    <h3>illustration</h3>
+      <div class="illust-list">
+        <div class="grid-row grid-6">
+          <div class="hover-img">
+            <img src="images/earth-up-m.png" alt="地球">
+            <img src="images/earth-up.png" alt="地球">
+         </div>
+         <div class="hover-img">
+            <img src="images/mercury-up-m.png" alt="水星">
+            <img src="images/mercury-up.png" alt="水星">
+          </div>
+          <div class="hover-img">
+            <img src="images/venus-up-m.png" alt="金星">
+            <img src="images/venus-up.png" alt="金星">
+          </div>
+          <div class="hover-img">
+            <img src="images/mars-up-m.png" alt="火星">
+            <img src="images/mars-up.png" alt="火星">
+          </div>
+          <div class="hover-img">
+            <img src="images/jupiter-up-m.png" alt="木星">
+            <img src="images/jupiter-up.png" alt="木星">
+          </div>
+          <div class="hover-img">
+            <img src="images/saturn-up-m.png" alt="土星">
+            <img src="images/saturn-up.png" alt="土星">
+          </div>
+        </div>
+
+        <div class="grid-row grid-3">
+          <div class="hover-img">
+            <img src="images/neptune-up-m.png" alt="海王星">
+            <img src="images/neptune-up.png" alt="海王星">
+          </div>
+          <div class="hover-img">
+            <img src="images/uranus-up-m.png" alt="天王星">
+            <img src="images/uranus-up.png" alt="天王星">
+          </div>
+          <div class="hover-img">
+            <img src="images/pluto-up-m.png" alt="冥王星">
+            <img src="images/pluto-up.png" alt="冥王星">
+          </div>
+        </div>
+      </div>
+
+      <div class="encyclopedia-btn">
+        <a href="illustration.html">and more</a>
+      </div>
+  </section>
+
 </section>
+<!-- ここまでギャラリー -->
 
-<!-- セクション*アバウト -->
-<section id="about" class="fadein contents">
-<div class="wrapper">
-    <div class="section__head">
-        <h2>ABOUT</h2>
-        <div class="bar"><span class="bar-fill"></span></div>
-    </div>
-</div>
 
-    <div class="section__body">
-            <div class="container__about">
-                <div class="flex_item flex_item--about cut-in">
-                    <img src="images/cut-in.png" alt="ポートフォリオ｜カットイン">
-                </div>
-            </div>
-        </div>
+<!-- ここからアバウト -->
+<section id="about" class="fadein">
+  <img src="images/astronaut-3.png" alt="宇宙飛行士のイラスト" class="astronaut-img">
+  <div class="border"><h2>About</h2></div>
+  <div class="padding-box">
+    <div class="planet-rocket-box">
+      <dl>
+        <dt>このサイトを作った経緯</dt>
+        <dd>
+          <p>元々宇宙モチーフが好きだった私が<br>
+          友人と訪れた<br>
+          <strong>宇宙科学博物館 コスモアイル羽咋</strong>での<br>
+          体験がきっかけです。</p>
+          <p>本物の宇宙船やさまざまな宇宙機材の展示、<br>
+          シアターでの解説を見聞きし、その感動を形にしたいと思い、<br>
+          このサイトを制作しました。</p>
+          <p>実際の宇宙探査機が撮影した神秘的な宇宙の写真や、<br>
+          オリジナルの天体擬人化イラストを掲載しています。</p>
+          <p>ご覧いただく皆さまに、少しでも宇宙の魅力が伝われば幸いです。</p>
+        </dd>
+      </dl>
     </div>
-<div class="wrapper">
-    <div class="container">
-        <div class="container__about">
-                <div class="flex_item flex_item--about">
-                    <dl>
-                        <dt>瀬虎えと - Eto Setora</dt>
-                            <dd>マルチクリエイター / Webデザイン・イラスト制作を中心に活動</dd>
-                        <dt>Creative Approach</dt>
-                            <dd>世界観統一を意識したデザイン / レスポンシブ対応 / ユーザー体験重視</dd>
-                        <dt>Strengths</dt>
-                            <dd>ECサイト運営補助経験 / コーディング・UI改善 / キャラクターイラスト制作</dd>
-                        <dt>Skills</dt>
-                            <dd>HTML / CSS / JavaScript / Photoshop / Illustrator / CLIP STUDIO PAINT/ SAI</dd>
-                    </dl>
-                </div>
-        </div>
-    </div>
-</div>
+  </div>
 </section>
+<!-- ここまでアバウト -->
 
-<!-- セクション*コンタクト -->
-<section id="contact" class="fadein contents">
-<div class="wrapper">
-    <div class="section__head">
-        <h2>CONTACT</h2>
-        <div class="bar"><span class="bar-fill"></span></div>
-    </div>
-    <div class="section__body">
-        <p class="caption">現在、Web制作・デザイン・イラスト制作のご相談を受け付けております。</p>
-        <div class="contact--link">
-        <dl>
-            <dt>Mail</dt>
-                <dd class="link--foam"><a href="https://forms.gle/CAZhfzx7gRfdsjD36" target="_blank">お問い合わせはこちら</a></dd>
-                <dd>
-                <p>お仕事のご依頼・ご相談はこちらからお願い致します。</p>
-                </dd>
-            <dt>Link</dt>
-                <dd class="link--flex sns-icon--github"><a href="https://github.com/etosetora-work" target="_blank"><img src="images/GitHub_Lockup_Black.png" alt="GitHub">GitHub</a></dd>
-                <dd class="link--flex sns-icon--x"><a href="https://x.com/et0setora" target="_blank"><img src="images/logo-black.png" alt="X">X(旧Twitter)</a></dd>
-                <dd class="link--flex sns-icon--xfolio"><a href="https://xfolio.jp/portfolio/etosetora" target="_blank"><img src="images/Xfolio_standard type.png" alt="Xfolio">Xfolio</a></dd>
-        </dl>
+<!-- ここからコンタクト -->
+<section id="contact" class="fadein">
+  
+  <img src="images/astronaut-4.png" alt="宇宙飛行士のイラスト" class="astronaut-img">
+
+  <div class="border"><h2>Contact</h2></div>
+  <p class="sub-text">このフォームはダミーです。<br>ご連絡はポートフォリオトップのフォームからお願いします。</p>
+
+  <div class="padding-box">
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name"><span class="required">必須</span> お名前</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="email"><span class="required">必須</span> メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="message"><span class="required">必須</span> お問合せ内容</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+  
+      <button type="button" class="submit-btn" id="openModalBtn">
+        <span>送</span><span>信</span>
+      </button>
+      <!-- ポップアップ本体 -->
+      <div class="modal" id="popupModal">
+        <div class="modal-content">
+          <p>
+            🚀<br>
+            <br>
+            このフォームは現在停止中です。
+          </p>
+          <button id="closeModalBtn">×</button>
         </div>
-    </div>
-</div>
+      </div>
+    </form>
+  </div>
 </section>
+<!-- ここまでコンタクト -->
 
-</main>
+</div>
+<!-- ここまでコンテンツ -->
 
-<!-- フッター*画面追従ボタン -->
-<footer>
-<p class="copyright">Web Designer / Illustrator｜&COPY;2026 Eto Setora. All Rights Reserved.</p>
+<!-- ここからフッター -->
+<footer id="footer">
+  <p>The universe awaits your curiosity.</p>
+  <p class="sub-text">宇宙はあなたの好奇心を待っています。</p>
+
+  <p class="copyright">&COPY; 2025 Eto Setora. All rights reserved.| Some images courtesy of NASA.</p>
 </footer>
+<!-- ここまでフッター -->
+</div>
 
-<a href="#hero" class="page-top"><img src="images/page-jump.png" alt="ページトップへ戻る"></a>
+<a href="#" class="page-top"><img src="images/page-jump.png" alt="ページトップへ戻る"></a>
 
 <!-- ここからスクリプト -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/lightbox.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 <!-- ここまでスクリプト -->
 </body>
