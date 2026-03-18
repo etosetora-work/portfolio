@@ -57,7 +57,7 @@ setInterval(createShootingStar, 3000); // 3秒ごとに流星
     document.body.classList.add('font-loaded');
     }
 
-// ミートボールメニュー
+// ケバブメニュー
   const menuButton = document.querySelector('.menu-button');
   const dots = document.querySelectorAll('.menu-button .dot');
   const menu = document.querySelector('.menu');

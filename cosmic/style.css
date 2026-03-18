@@ -366,7 +366,7 @@ header {
   padding: 10px;
   }
 
-/* ミートボールメニュー */
+/* ケバブメニュー */
 .menu-button {
   position: fixed;
   top: 20px;
@@ -490,7 +490,7 @@ header {
     font-size: 1.5em;
     }
 
-  /* ミートボールメニューボタンを非表示にする */
+  /* ケバブメニューボタンを非表示にする */
   .menu-button {
     display: none;
     }
