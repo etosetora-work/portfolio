@@ -860,6 +860,7 @@ h1 img {
 
   .price__web_design,.price__illustration {
     width: 450px;
+    padding: 0;
     }
   
   .container__price dt::before{
