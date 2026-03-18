@@ -824,7 +824,8 @@ h1 img {
   }
 
 .price__web_design,.price__illustration {
-  width: 400px;
+  max-width: 100%;
+  padding: 0 10px;
   position: relative;
   border: solid 2px #8377D1;
   border-top: solid 8px #8377D1;
@@ -834,19 +835,11 @@ h1 img {
   font-size: 1rem;
   }
 
-.container__price dt::before{
-  border-left: 11px solid #8377D1;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  }
-
 .option {
   font-size: 1rem;
   }
 
 .attention {
-  max-width: 620px;
-  margin: 0 auto;
   padding: 0 10px;
   }
 
@@ -868,8 +861,16 @@ h1 img {
   .price__web_design,.price__illustration {
     width: 450px;
     }
+  
+  .container__price dt::before{
+    border-left: 11px solid #8377D1;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    }
 
   .attention {
+    max-width: 620px;
+    margin: 0 auto;
     padding: 0;
     }
   }
