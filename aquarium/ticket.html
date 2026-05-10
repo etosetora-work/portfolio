@@ -1,11 +1,17 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta name="robots" content="none">
 <meta charset="utf-8">
 <title>ふれあい水族館｜営業時間・料金・チケット</title>
-<meta name="description" content="海とのふれあいを、もっと身近に。さまざまな海のいきものたちとのふれあい体験がテーマのふれあい水族館へようこそ！">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="職業訓練で制作した架空の水族館サイトを、レスポンシブ対応・レイアウト改善を目的にリニューアルしました。">
+<meta property="og:title" content="ふれあい水族館｜ポートフォリオ">
+<meta property="og:description" content="海とのふれあいを、もっと身近に。さまざまな海のいきものたちとのふれあい体験がテーマのふれあい水族館へようこそ！">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://etosetora-work.github.io/portfolio/aquarium/ticket.html">
 <!-- ファイルリンク　-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- ファビコン -->
 <link rel="icon" href="images/favicon.ico">
@@ -13,27 +19,52 @@
 
 <body>
 
-<!-- ここからヘッダー　-->
-<header class="header">
-    <div class="logo">
-        <h1><a href="index.html"><img src="images/logo.png" alt="ふれあい水族館"></a></h1>
-    </div>
-	    <nav class="nav">
-    	<ul>
-        	<li><a href="guide.html" class="nav-link">施設案内</a></li>
-            <li><a href="ticket.html" class="nav-link">営業時間</a></li>
-		    <li><a href="access.html" class="nav-link">アクセス</a></li>
-            <li><a href="help.html" class="nav-link">ヘルプ</a></li>
-			<li><a href="company.html" class="nav-link">会社概要</a></li>
+<!-- ヘッダー -->
+<header>
+  <nav class="nav nav--fixed">
+    <!-- ハンバーガー -->
+    <button class="hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- スマホ用メニュー -->
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+        	<li><a href="guide.html">施設案内</a></li>
+            <li><a href="ticket.html">営業時間</a></li>
+		    <li><a href="access.html">アクセス</a></li>
+            <li><a href="help.html">ヘルプ</a></li>
+			<li><a href="company.html">会社概要</a></li>
         </ul>
-	    </nav>
+    </div>
+
+    <div class="nav--pc__header">
+        <div class="logo">
+        <h1><a href="index.html"><img src="images/logo.png" alt="ふれあい水族館"></a></h1>
+        </div>
+
+        <!-- PC用ナビ -->
+        <div class="nav-list">
+            <ul>
+        	    <li><a href="guide.html">施設案内</a></li>
+                <li><a href="ticket.html">営業時間</a></li>
+		        <li><a href="access.html">アクセス</a></li>
+                <li><a href="help.html">ヘルプ</a></li>
+			    <li><a href="company.html">会社概要</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
 </header>
-<!-- ここまでヘッダー　-->
 
-<div id="container">
-<!-- ここから営業時間・料金・チケット　-->
-<div id="ticket">
 
+<main>
+<div class="wrapper">
+
+<div class="ticket_guide">
     <div class="open">
         <h4 class="caption"><img src="images/caption_open.png" alt="営業時間"></h4>
             <div class="business_days">
@@ -51,7 +82,7 @@
                 <p class="ticket_caption"><span>◆</span>休館日</p>
                 <p class="close">休館日　年中無休<sup>※</sup></p>
                 <p class="cmt">水族館のメンテナンス等で臨時休館あり<br>
-                　詳しくは営業カレンダーをご覧ください。</span>
+                　詳しくは営業カレンダーをご覧ください。</p>
                 
                 <div class="ticket_button">
                 <a href="#">営業日カレンダー</a>
@@ -127,27 +158,28 @@
             </div>
 
         </div>
-
-        </div>
     </div>
-<!-- ここまで営業時間・料金・チケット　-->
 </div>
-<!-- ここからフッター　-->
+
+</div>
+</main>
+
+<!-- フッター -->
 <footer>
-    <div class="footer_flex">
-        <div class="logo_address_wrap">
-            <div class="footer_logo">
+    <div class="footer__flex">
+        <div class="footer_logo">
             <img src="images/logo_footer.png" alt="ふれあい水族館">
-            </div>
-            <address>
+        </div>
+        <address>
             <span>住所</span><br>●●県××市△△町123</p>
             <span>電話番号</span><br>0123-45-6789</p>
-            <a href="#"><img src="images/twitter.png" alt="公式twitter"></a>
-            <a href="#"><img src="images/shop.png" alt="オンラインショップ"></a>
-            </address>
-        </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
+            <div class="link__icon">
+                <a href="#"><img src="images/twitter.png" alt="公式twitter"></a>
+                <a href="#"><img src="images/shop.png" alt="オンラインショップ"></a>
+            </div>
+        </address>
+        <ul class="footer__nav">
+            <li><a href="index.html">ホーム</a></li>
             <li><a href="guide.html">施設案内</a></li>
             <li><a href="ticket.html">営業時間</a></li>
             <li><a href="access.html">アクセス</a></li>
@@ -155,12 +187,12 @@
             <li><a href="company.html">会社概要</a></li>
         </ul>
     </div>
-    <p class="copyright">Copyright &copy;××× All Rights Reserved.</p>
+    <p class="copyright">Copyright &copy;ふれあい水族館 All Rights Reserved.</p> 
 </footer>
-<!-- ここまでフッター　-->
 
 <!-- ここからスクリプト　-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 <!-- ここまでスクリプト　-->
 </body>
