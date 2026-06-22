@@ -613,6 +613,10 @@ h1 img {
   color: #00B894;
   }
 
+.cmt {
+  font-size: 0.8rem; 
+  }
+
 /* デスクトップ向けスタイル */
 @media screen and (min-width: 1024px) {
   .web_design__body {
