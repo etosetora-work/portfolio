@@ -59,12 +59,6 @@ body {
   background: #F5F4F5;
   }
 
-.debug *,
-.debug *::before,
-.debug *::after {
-  border: 1px solid #8377D1;
-  }
-
 /* デスクトップ向けスタイル */
 @media screen and (min-width: 1024px) {
   body {
