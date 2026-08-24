@@ -1,0 +1,326 @@
+<!-- Basic -->
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深凪レム｜架空VTuber LP</title>
+
+<!-- SEO -->
+<meta name="description" content="架空VTuber「深凪レム」を題材に、世界観表現とUIデザイン、フロントエンド実装を意識して制作したランディングページです。">
+
+<!-- OGP -->
+<meta property="og:title" content="深凪レム｜架空VTuber LP">
+<meta property="og:description" content="架空VTuber「深凪レム」を題材に、世界観表現とUIデザイン、フロントエンド実装を意識して制作したランディングページです。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://">
+<meta property="og:image" content="img/ogp.jpg">
+<meta property="og:site_name" content="深凪レム">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon -->
+<link rel="icon" href="images/favicon.ico">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="js/script.js" defer></script>
+</head>
+
+<body>
+<!-- header*追従ナビ -->
+<header>
+  <nav class="nav nav--fixed">
+    <!-- ハンバーガー -->
+    <button class="hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- スマホ用メニュー -->
+    <div class="menu">
+        <ul>
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contents">Contents</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="spmenu__footer">
+            <p>N.D.R.I.</p>
+            <p class="minimum">OBSERVATION MENU</p>
+            <p class="minimum">ACCESS LEVEL : GENERAL</p>
+            <p class="minimum">STATUS : ONLINE</p>
+        </div>
+    </div>
+
+    <!-- PC用ナビ -->
+    <div class="nav-list">
+        <ul>
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contents">Contents</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- セクション*hero -->
+<section id="hero">
+    <div class="hero__container">
+        <!-- スマホ用KV -->
+         <img class="hero__container--sp hero__kv" src="images/hero_sp.webp" alt="深凪レム｜キービジュアル">
+
+        <!-- PC用KV -->
+        <img class="hero__container--pc hero__kv" src="images/hero_pc.webp" alt="深凪レム｜キービジュアル">
+
+        <!-- 共通 -->
+        <div class="hero__triangle hero__triangle--top"></div>
+
+        <div class="hero__rem-set">
+            <img src="images/rem_logo.webp" alt="深凪レム｜ロゴ">
+            <p>N.D.R.I</p>
+            <p>Rem Minagi</p>
+            <p>Researcher</p>
+        </div>
+
+        <div class="hero__copy">
+            <h1>深海から届く、<br>観測記録。</h1>
+        </div>
+    </div>
+</section>
+
+
+<div class="wrapper">
+
+<!-- 深度メーター -->
+    <div class="depth-meter" aria-hidden="true"></div>
+
+<!-- セクション*about -->
+    <section id="about">
+        <div class="about__container fadein">
+            <h2>About</h2>
+            <h3>VTuber:深凪レムについて</h3>
+
+            <div class="about__remset">
+
+                <div class="about__wave"></div>
+                <div class="about__dot"></div>
+
+                <div class="about__flex">
+                    <div class="about__flex-item">
+                        <img src="images/rem_visual.webp" alt="深凪レム｜立ち絵">
+                    </div>
+
+                    <div class="about__flex-item">
+                        <div class="about__label label01">
+                            <p>深凪 レム<br>
+                                年齢・性別 共に不詳</p>
+                            <span class="about__line"></span>    
+                        </div>
+
+                        <div class="about__label label02">
+                            <p>ネイレス研究所<br>
+                                (N.D.R.I.)の研究員</p>
+                            <span class="about__line"></span>
+                        </div>
+
+                        <div class="about__label label03">
+                            <p>海の底で見つかった<br>
+                                未知の生命体や<br>
+                                現象を記録している</p>
+                            <span class="about__line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- セクション*contents -->
+    <section id="contents">
+        <div class="contents__container fadein">
+            <h2>Contents</h2>
+            <h3>主な活動・配信内容</h3>
+
+            <div class="contents__grid">
+                <div class="contents__grid--item">
+                    <h4>深海生物観測</h4>
+                    <img src="images/fish_icon.png" alt="">
+                    <p>深海魚や<br>
+                        海洋生物の解説</p>
+                </div>
+
+                <div class="contents__grid--item">
+                    <h4>海の記録朗読</h4>
+                    <img src="images/book_icon.png" alt="">
+                    <p>海をテーマにした<br>
+                        物語や詩の朗読</p>
+                </div>
+
+                <div class="contents__grid--item">
+                    <h4>深海探索配信</h4>
+                    <img src="images/game_icon.png" alt="">
+                    <p>海や探索が題材の<br>
+                        ゲーム実況</p>
+                </div>
+
+                <div class="contents__grid--item">
+                    <h4>研究報告</h4>
+                    <img src="images/testtube_icon.png" alt="">
+                    <p>観測中に発見した<br>
+                        出来事や記録</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- セクション*gallery -->
+    <section id="gallery">
+        <div class="gallery__container fadein">
+            <h2>Gallery</h2>
+            <h3>活動に関する資料一覧</h3>
+
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="images/rem_design.webp" data-lightbox="gallery" data-title="深凪レム｜デザイン設定画">
+                        <img src="images/rem_design.webp" alt="深凪レム｜デザイン設定画">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/rem_visual.webp" data-lightbox="gallery" data-title="深凪レム｜立ち絵">
+                        <img src="images/rem_visual.webp" alt="深凪レム｜立ち絵">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/kv.webp" data-lightbox="gallery" data-title="深凪レム｜キービジュアル">
+                        <img src="images/kv.webp" alt="深凪レム｜キービジュアル">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/sd.webp" data-lightbox="gallery" data-title="深凪レム｜SD">
+                        <img src="images/sd.webp" alt="深凪レム｜SD">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper galleryThumb">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumb">
+                        <img src="images/design_thumbnail.webp" alt="深凪レム｜デザイン設定画">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb">
+                        <img src="images/visual_thumbnail.webp" alt="深凪レム｜立ち絵">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb">
+                        <img src="images/kv_thumbnail.webp" alt="深凪レム｜キービジュアル">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb">
+                        <img src="images/sd_thumbnail.webp" alt="深凪レム｜SD">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- セクション*contact -->
+    <section id="contact">
+        <div class="contact__container fadein">
+            <h2>Contact</h2>
+            <h3>観測依頼はこちらから</h3>
+            
+            <div class="contact__form">
+                <div class="form__container">
+                    <img src="images/mail_icon.png" alt="">
+                    <form action="#" method="post">
+                        <div class="contact__item">
+                            <label for="name" class="contact__label">NAME</label>
+                            <div class="contact__field">
+                            <input type="text" id="name" name="name" class="contact__input" required>
+                            </div> 
+                        </div>
+
+                        <div class="contact__item">
+                            <label for="email" class="contact__label">E-MAIL</label>
+                            <div class="contact__field">
+                            <input type="email" id="email" name="email" class="contact__input" required>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <label for="message" class="contact__label">MESSAGE</label>
+                        </div>
+                        <div class="contact__item contact__field2">
+                            <textarea id="message" name="message" rows="8" required  class="contact__textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</main>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer__container">
+        <ul class="link__flex">
+            <li><a href="#">YouTube</a></li>
+            <li class="footer__icon">
+                <img src="images/ecg_icon.png" alt="">
+            </li>
+            <li><a href="#">X</a></li>
+        </ul>
+        <p class="copyright">&COPY;2026 Minagi Rem. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<a href="#hero" class="page-top"><img src="images/pagetop_img.webp" alt="ページトップへ戻る"></a>
+
+<!-- ここからスクリプト -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/script.js"></script>
+<!-- ここまでスクリプト -->
+</body>
+</html>
